@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="fdprovisoes.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="divForms">
+                <h3>Fundos de Provisões</h3>
+                <p>Calcule seu montante futuro.</p>
+                <div class="row">
+                    <div class="col">
+                        <label for="Nome">Qual seu nome?</label>
+                        <input type="text" class="form-control" id="Nome">
+                    </div>
+                    <div class="col">
+                        <label for="ParcelaMensal">Parcela mensal:</label>
+                        <input type="number" class="form-control" placeholder="somente números" id="ParcelaMensal">
+                    </div>
+                    <div class="col">
+                        <label for="TaxaJuros">Taxa de juros:</label>
+                        <input type="number" class="form-control" id="TaxaJuros">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="ParcelaMensal">Tempo (em meses):</label>
+                        <input type="number" class="form-control" placeholder="somente números" id="Tempo">
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-success" id="CalcularMontante">Calcular</button>
+                    </div>
+                </div>
+                <div class="alert alert-success" role="alert" id="divResultado">
+                    O resultado aparecerá aqui.
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success" id="Limpar" style="width: 100%;">Refazer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="pdprovisoes.js"></script>
+    </body>
+</html>
